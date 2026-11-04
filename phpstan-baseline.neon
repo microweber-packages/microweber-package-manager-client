@@ -1,1 +1,31 @@
 parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to method getExtra\(\) on an unknown class Composer\\Package\\PackageInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Installers/BaseInstaller.php
+
+		-
+			message: '#^Call to method getPrettyName\(\) on an unknown class Composer\\Package\\PackageInterface\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Installers/BaseInstaller.php
+
+		-
+			message: '#^Call to method getTargetDir\(\) on an unknown class Composer\\Package\\PackageInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Installers/BaseInstaller.php
+
+		-
+			message: '#^Call to method getType\(\) on an unknown class Composer\\Package\\PackageInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Installers/BaseInstaller.php
+
+		-
+			message: '#^Parameter \$package of method MicroweberPackages\\PackageManagerClient\\Installers\\BaseInstaller\:\:getInstallPath\(\) has invalid type Composer\\Package\\PackageInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Installers/BaseInstaller.php
